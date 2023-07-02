@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENTS</title>
+    <style>
+        div {
+            background-color: chocolate;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: cyan;
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <h3>Onmousewheel</h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eos dignissimos dolor neque voluptatum laborum amet consequuntur minima minus soluta, facere perferendis quisquam enim atque rerum quod accusamus. Voluptatibus, beatae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolorem, harum assumenda repellendus voluptatibus est! Unde consequatur officia, ipsam velit aliquid quam soluta maxime ipsum suscipit tenetur iure repellendus ullam.</p>
+    </div>
+
+    <script>
+        function wheelHandler(){
+            document.getElementById("output").innerHTML = document.getElementById("txt").scrollTop + "px";
+        }
+    </script>
+</body>
+</html>
